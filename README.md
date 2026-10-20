@@ -14,7 +14,7 @@ re-rendered, translated, corrected or re-cut a year later without asking anyone.
 
 - 🎬 Watch: [YouTube @quxuechinese](https://www.youtube.com/@quxuechinese)
 - 🗂 Landing page & free character-card pack: GitHub Pages from `main` / `/docs` (source in [`docs/`](docs/))
-- 🐞 Corrections are welcome and treated as a priority: open an [issue](../../issues)
+- 🐞 Corrections are welcome and treated as a priority: open an [issue](https://github.com/meiyanzhuang2012-tech/quxuechinese/issues)
 
 ## What is in here
 

@@ -12,7 +12,7 @@
 
 - 🎬 观看：[YouTube @quxuechinese](https://www.youtube.com/@quxuechinese)
 - 🗂 落地页与免费字源卡包：GitHub Pages（`main` / `/docs` 发布，源文件在 [`docs/`](docs/)）
-- 🐞 纠错优先处理：直接开 [issue](../../issues)
+- 🐞 纠错优先处理：直接开 [issue](https://github.com/meiyanzhuang2012-tech/quxuechinese/issues)
 
 ## 目录说明
 
