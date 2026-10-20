@@ -1,17 +1,17 @@
-# 汉字一口 · 视频生产仓库（Hanzi Bites）
+# 趣学汉语 · 视频生产仓库（QuXue Chinese）
 
 > English: [README.md](README.md)
 
 **一个字，一分钟，一句「原来是这个意思」。**
 
-这里是 **Hanzi Bites** 汉语学习短视频账号的生产仓库：面向英语母语的成年自学者，60 秒内讲清一个汉字／词／成语／诗句的**来历**，不出镜、不做场景口语。
+这里是 **趣学汉语（QuXue Chinese）** 汉语学习短视频账号的生产仓库：面向英语母语的成年自学者，60 秒内讲清一个汉字／词／成语／诗句的**来历**，不出镜、不做场景口语。
 
 这个仓库不是课程，也不是短语手册。每一集只回答一个问题：*它为什么长这样、为什么这么说。*
 
 一集的全部原料都在这里，纯文本 + 素材，所以一年后还能重渲、翻译、纠错、换平台重剪 —— 不用问任何人。
 
-- 🎬 观看：[YouTube @HanziBites](https://www.youtube.com/@HanziBites) · [TikTok @hanzibitesofficial](https://www.tiktok.com/@hanzibitesofficial)
-- 🗂 落地页与免费字源卡包：**https://hanzibites.github.io/**（GitHub Pages，源文件在 [`docs/`](docs/)）
+- 🎬 观看：[YouTube @quxuechinese](https://www.youtube.com/@quxuechinese)
+- 🗂 落地页与免费字源卡包：GitHub Pages（`main` / `/docs` 发布，源文件在 [`docs/`](docs/)）
 - 🐞 纠错优先处理：直接开 [issue](../../issues)
 
 ## 目录说明

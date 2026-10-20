@@ -204,8 +204,8 @@ def make_slide(row: dict, meta: dict, idx: int, total: int, out_png: Path):
     # 角标：ep 编号 + 分镜序号
     tag = f"{meta.get('ep', '')}  {idx + 1}/{total}"
     d.text((60, H - 130), tag, font=tag_font, fill=(150, 138, 120))
-    d.text((W - 60 - d.textlength("@HanziBites", font=tag_font), H - 130),
-           "@HanziBites", font=tag_font, fill=(150, 138, 120))
+    d.text((W - 60 - d.textlength("@quxuechinese", font=tag_font), H - 130),
+           "@quxuechinese", font=tag_font, fill=(150, 138, 120))
     img.save(out_png, "PNG")
 
 

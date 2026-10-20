@@ -1,10 +1,10 @@
-# Hanzi Bites — production repo
+# 趣学汉语 · QuXue Chinese — production repo
 
 > 中文版：[README.zh-CN.md](README.zh-CN.md)
 
 **One character. One minute. One "oh, that's why."**
 
-This is the working repo behind the **Hanzi Bites** short-video account — Chinese characters,
+This is the working repo behind **趣学汉语 (QuXue Chinese)** — the short-video account where Chinese characters,
 words, idioms and poetry explained in English, under 60 seconds, no talking head.
 It is not a course and not a phrasebook. Every episode answers exactly one question:
 *why does this look / mean the way it does?*
@@ -12,8 +12,8 @@ It is not a course and not a phrasebook. Every episode answers exactly one quest
 Everything that goes into an episode lives here as plain text and assets, so an episode can be
 re-rendered, translated, corrected or re-cut a year later without asking anyone.
 
-- 🎬 Watch: [YouTube @HanziBites](https://www.youtube.com/@HanziBites) · [TikTok @hanzibitesofficial](https://www.tiktok.com/@hanzibitesofficial)
-- 🗂 Landing page & free character-card pack: **https://hanzibites.github.io/** (GitHub Pages, source in [`docs/`](docs/))
+- 🎬 Watch: [YouTube @quxuechinese](https://www.youtube.com/@quxuechinese)
+- 🗂 Landing page & free character-card pack: GitHub Pages from `main` / `/docs` (source in [`docs/`](docs/))
 - 🐞 Corrections are welcome and treated as a priority: open an [issue](../../issues)
 
 ## What is in here
