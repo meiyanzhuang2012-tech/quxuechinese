@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>Hanzi Bites — one character, one minute</title>
+<meta name="description" content="One character, one minute. Why Chinese characters look the way they do — 60-second episodes, free character-card pack, scripts and glyph sources open in the repo.">
+<meta property="og:title" content="Hanzi Bites — one character, one minute">
+<meta property="og:description" content="Why Chinese characters look the way they do. 60-second episodes, free character-card pack.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* 单文件静态页 · 复用团队 preview 做法：内联 CSS/JS、390px 手机基准、桌面居中、无构建步骤。
+   色值：纸 #F3ECDF / 墨 #262220 / 朱红 #B22222。 */
+:root{
+  --paper:#F3ECDF; --paper-2:#EFE6D6; --ink:#262220; --ink-2:#5B524A;
+  --vermilion:#B22222; --line:rgba(38,34,32,.14); --tan:#8A7C6A;
+  --radius:14px;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:Inter,-apple-system,"Segoe UI",Roboto,"Noto Sans SC",sans-serif;
+  font-size:16px; line-height:1.6;
+  background-image:radial-gradient(rgba(38,34,32,.045) 1px,transparent 1px);
+  background-size:3px 3px;
+}
+.wrap{max-width:640px;margin:0 auto;padding:0 22px 64px}
+a{color:var(--vermilion);text-decoration:none}
+a:active{opacity:.65}
+
+/* ---------- hero ---------- */
+header{padding:52px 0 18px;text-align:center}
+.brand{font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--tan);font-weight:600}
+h1{
+  font-family:"Noto Serif SC",serif;font-weight:900;
+  font-size:clamp(28px,8vw,40px);line-height:1.22;margin:16px 0 10px;letter-spacing:.01em;
+}
+.sub{color:var(--ink-2);font-size:15px;margin:0 auto;max-width:30em}
+.glyph{
+  font-family:"Noto Serif SC",serif;font-weight:900;font-size:132px;line-height:1;
+  margin:30px 0 6px;color:var(--ink);position:relative;display:inline-block;
+}
+.glyph::after{content:"";position:absolute;left:50%;bottom:-74px;transform:translateX(-50%);width:3px;height:26px;background:var(--vermilion)}
+.pinyin{font-size:15px;color:var(--tan);letter-spacing:.14em;margin-top:26px}
+
+/* ---------- buttons ---------- */
+.cta{display:flex;flex-direction:column;gap:10px;margin:34px 0 8px}
+.btn{
+  display:block;text-align:center;padding:15px 18px;border-radius:var(--radius);
+  font-weight:600;font-size:15px;border:1px solid transparent;transition:transform .12s ease;
+}
+.btn:active{transform:scale(.985)}
+.btn--primary{background:var(--ink);color:#FBF7EF}
+.btn--ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn small{display:block;font-weight:400;font-size:12px;opacity:.62;margin-top:3px}
+
+/* ---------- sections ---------- */
+section{margin:46px 0 0}
+h2{
+  font-family:"Noto Serif SC",serif;font-size:19px;font-weight:700;margin:0 0 4px;
+}
+h2 .zh{font-size:13px;color:var(--tan);font-weight:400;margin-left:8px;letter-spacing:.08em}
+.hint{font-size:13px;color:var(--ink-2);margin:0 0 18px}
+.rule{height:1px;background:var(--line);margin:0 0 22px}
+ul.plain{list-style:none;padding:0;margin:0}
+ul.plain li{
+  display:flex;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);font-size:14.5px;color:var(--ink-2)
+}
+ul.plain li b{color:var(--ink);font-weight:600}
+ul.plain li .n{
+  flex:0 0 26px;height:26px;border-radius:7px;background:var(--ink);color:#FBF7EF;
+  font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:2px
+}
+/* 卡包 */
+.pack{
+  border:1px solid var(--line);border-radius:var(--radius);padding:18px;background:rgba(255,255,255,.5)
+}
+.pack .row{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.pack .name{font-family:"Noto Serif SC",serif;font-weight:700;font-size:16px}
+.pack .meta{font-size:12px;color:var(--tan);white-space:nowrap}
+.pack p{font-size:13.5px;color:var(--ink-2);margin:8px 0 14px}
+/* 选题库 */
+.backlog{display:grid;grid-template-columns:1fr;gap:8px;margin-top:14px}
+.bl-item{
+  display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--ink-2);
+  padding:9px 12px;border:1px dashed var(--line);border-radius:10px
+}
+.bl-item .h{font-family:"Noto Serif SC",serif;font-weight:700;font-size:16px;color:var(--ink);flex:0 0 28px}
+.bl-item .t{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bl-item .p{font-size:11px;color:var(--tan);border:1px solid var(--line);border-radius:5px;padding:1px 5px}
+footer{
+  margin-top:56px;padding-top:22px;border-top:1px solid var(--line);
+  font-size:12px;color:var(--tan);text-align:center
+}
+footer a{color:var(--tan);text-decoration:underline}
+@media(min-width:680px){
+  .wrap{padding-bottom:80px}
+  .cta{flex-direction:row}
+  .cta .btn{flex:1}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">Hanzi Bites</div>
+    <h1>One character.<br>One minute.<br>One “oh — that's why.”</h1>
+    <p class="sub">For adults who quit Chinese twice. We explain why a character looks like that, instead of handing you another phrasebook.</p>
+    <div class="glyph">火</div>
+    <div class="pinyin">huǒ · fire</div>
+  </header>
+
+  <div class="cta">
+    <a class="btn btn--primary" href="https://www.youtube.com/@HanziBites" target="_blank" rel="noopener">
+      Watch on YouTube
+      <small>New character every week</small>
+    </a>
+    <a class="btn btn--ghost" href="#pack">
+      Get the free character pack
+      <small>52 cards · print or phone wallpaper</small>
+    </a>
+  </div>
+
+  <section>
+    <h2>What this is<span class="zh">这是什么</span></h2>
+    <div class="rule"></div>
+    <ul class="plain">
+      <li><span class="n">1</span><span><b>One idea per episode.</b> A character, a word, an idiom, one line of poetry — where it came from, in under 60 seconds.</span></li>
+      <li><span class="n">2</span><span><b>Drawn, not filmed.</b> Oracle-bone script to the character you type today, animated stroke by stroke.</span></li>
+      <li><span class="n">3</span><span><b>No hype.</b> No “Chinese is a beautiful and profound language”. Just the part you can actually check.</span></li>
+    </ul>
+  </section>
+
+  <section id="pack">
+    <h2>Free character pack<span class="zh">字源卡包</span></h2>
+    <p class="hint">Printable cards with the origin drawing, the modern character, pinyin and one HSK example word. Made to be printed, not monetised.</p>
+    <div class="pack">
+      <div class="row">
+        <span class="name">Hanzi Bites · Cards 01–52</span>
+        <span class="meta">PDF · A6 · 6 MB</span>
+      </div>
+      <p>Released with the repository — download the latest file from the releases page. Licence: CC BY-NC-SA 4.0.</p>
+      <a class="btn btn--ghost" href="https://github.com/hanzibites/hanzibites/releases/latest" target="_blank" rel="noopener" id="packLink">Download from GitHub Releases</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>The backlog is public<span class="zh">选题库是公开的</span></h2>
+    <p class="hint">Every topic we plan to cover lives in the repo as <code>scripts/选题库/topics.json</code>. Vote for one by opening an issue.</p>
+    <div class="backlog" id="backlog"><div class="bl-item">Loading topics…</div></div>
+  </section>
+
+  <section>
+    <h2>How it is made<span class="zh">怎么做出来的</span></h2>
+    <div class="rule"></div>
+    <ul class="plain">
+      <li><span class="n">A</span><span><b>Script in markdown.</b> One file per episode: timeline, voice-over, on-screen text. Plain text, diff-able, correctable.</span></li>
+      <li><span class="n">B</span><span><b>Rendered by one command.</b> <code>./make.sh A-001</code> → voice, frames, subtitles, MP4.</span></li>
+      <li><span class="n">C</span><span><b>Sources are checked.</b> Etymology claims cite a dictionary or a paper; corrections get credited in the description.</span></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Hanzi Bites · scripts &amp; glyph sources on <a href="https://github.com/hanzibites/hanzibites" target="_blank" rel="noopener">GitHub</a><br>
+    Content CC BY-NC-SA 4.0 · code MIT</p>
+  </footer>
+</div>
+
+<script>
+/* 选题库：直接读仓库里的 topics.json（Pages 同源），失败时给静态兜底，不留空白页 */
+(function () {
+  var box = document.getElementById('backlog');
+  var fallback = [
+    { hanzi: '火', title_en: 'Fire, drawn 3,000 years ago', platform: '双' },
+    { hanzi: '尖', title_en: 'This character is a physics diagram', platform: '双' },
+    { hanzi: '家', title_en: 'A roof with a pig means "home"', platform: '双' },
+    { hanzi: '东西', title_en: '"East west" is the word for stuff', platform: 'TT' }
+  ];
+  function render(list) {
+    box.innerHTML = '';
+    list.slice(0, 8).forEach(function (t) {
+      var d = document.createElement('div');
+      d.className = 'bl-item';
+      var h = document.createElement('span'); h.className = 'h'; h.textContent = t.hanzi;
+      var s = document.createElement('span'); s.className = 't'; s.textContent = t.title_en;
+      var p = document.createElement('span'); p.className = 'p'; p.textContent = t.platform;
+      d.appendChild(h); d.appendChild(s); d.appendChild(p);
+      box.appendChild(d);
+    });
+  }
+  fetch('../scripts/选题库/topics.json')
+    .then(function (r) { return r.json(); })
+    .then(function (d) { render(d.topics || []); })
+    .catch(function () { render(fallback); });
+})();
+</script>
+</body>
+</html>

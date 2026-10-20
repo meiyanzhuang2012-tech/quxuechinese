@@ -1,0 +1,6 @@
+.cache/
+*.raw.mp4
+__pycache__/
+.DS_Store
+# 成片体积大：默认不入库，靠 render 重出；要归档就放 GitHub Releases
+renders/成片/*.mp4

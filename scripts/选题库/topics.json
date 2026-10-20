@@ -1,0 +1,223 @@
+{
+  "version": "2026-10-20",
+  "source": "账号策划案-v1.md §3",
+  "count": 30,
+  "line_map": {
+    "A": "汉字拆解",
+    "B": "词",
+    "C": "成语",
+    "D": "诗"
+  },
+  "topics": [
+    {
+      "id": 1,
+      "title_en": "Fire, drawn 3,000 years ago and never updated",
+      "hanzi": "火",
+      "angle": "三个尖就是火苗，从甲骨到今天的形态几乎没变",
+      "platform": "双"
+    },
+    {
+      "id": 2,
+      "title_en": "This character is a physics diagram",
+      "hanzi": "尖",
+      "angle": "小在上、大在下 = 尖，看图就懂",
+      "platform": "双"
+    },
+    {
+      "id": 3,
+      "title_en": "A roof with a pig under it means \"home\"",
+      "hanzi": "家",
+      "angle": "屋里养牲畜才是家（农耕定居的活证据）",
+      "platform": "双"
+    },
+    {
+      "id": 4,
+      "title_en": "Sun plus moon equals bright",
+      "hanzi": "明",
+      "angle": "两个最亮的东西叠一起 = 明",
+      "platform": "双"
+    },
+    {
+      "id": 5,
+      "title_en": "A person leaning on a tree means \"rest\"",
+      "hanzi": "休",
+      "angle": "人靠树 = 休息，一个字就是一幅画",
+      "platform": "双"
+    },
+    {
+      "id": 6,
+      "title_en": "Water plus eye equals tears",
+      "hanzi": "泪",
+      "angle": "目旁三点水 = 泪，不用解释",
+      "platform": "双"
+    },
+    {
+      "id": 7,
+      "title_en": "One tree, two trees, three trees",
+      "hanzi": "木 / 林 / 森",
+      "angle": "叠加造词：树→林→森，中文的\"复制粘贴\"",
+      "platform": "双"
+    },
+    {
+      "id": 8,
+      "title_en": "The character that looks exactly like a mountain",
+      "hanzi": "山",
+      "angle": "三座峰，中间高两边低",
+      "platform": "双"
+    },
+    {
+      "id": 9,
+      "title_en": "Not plus straight equals crooked",
+      "hanzi": "歪",
+      "angle": "不+正=歪，中文的\"逻辑梗\"",
+      "platform": "TT"
+    },
+    {
+      "id": 10,
+      "title_en": "Why \"woman + child\" became the word for good",
+      "hanzi": "好",
+      "angle": "拆字即社会学：这个组合说明了什么、也说明了它的时代局限",
+      "platform": "双"
+    },
+    {
+      "id": 11,
+      "title_en": "\"East west\" is the Chinese word for stuff",
+      "hanzi": "东西",
+      "angle": "字面 vs 真实的巨大反差 + 长安东西市（注明是民间说法）",
+      "platform": "TT"
+    },
+    {
+      "id": 12,
+      "title_en": "Chinese people yell \"add oil\" at you",
+      "hanzi": "加油",
+      "angle": "字面加油站 vs 实际\"你行的\"",
+      "platform": "TT"
+    },
+    {
+      "id": 13,
+      "title_en": "The word that means \"convenient\" and \"use the bathroom\"",
+      "hanzi": "方便",
+      "angle": "一词两义的尴尬现场（PG 处理，不展开）",
+      "platform": "TT"
+    },
+    {
+      "id": 14,
+      "title_en": "\"Horse horse tiger tiger\" means \"so-so\"",
+      "hanzi": "马马虎虎",
+      "angle": "叠词 + 为什么是马虎",
+      "platform": "TT"
+    },
+    {
+      "id": 15,
+      "title_en": "\"Not much difference\" is a whole personality",
+      "hanzi": "差不多",
+      "angle": "差不多 = 文化态度，不只是词",
+      "platform": "双"
+    },
+    {
+      "id": 16,
+      "title_en": "Why Chinese says \"hard work\" when they mean \"thanks\"",
+      "hanzi": "辛苦（辛苦了）",
+      "angle": "辛苦了 = 职场/服务场景的万能体谅",
+      "platform": "双"
+    },
+    {
+      "id": 17,
+      "title_en": "\"Slow slow come\" is not an insult",
+      "hanzi": "慢慢来",
+      "angle": "安慰语，反\"效率至上\"",
+      "platform": "双"
+    },
+    {
+      "id": 18,
+      "title_en": "You can't buy this with money",
+      "hanzi": "面子",
+      "angle": "面子 = 社交货币，讲用法不讲评判",
+      "platform": "YT"
+    },
+    {
+      "id": 19,
+      "title_en": "A man draws a snake. Then he adds feet.",
+      "hanzi": "画蛇添足",
+      "angle": "四幕故事 + \"你就是那个加动画的人\"",
+      "platform": "YT"
+    },
+    {
+      "id": 20,
+      "title_en": "A farmer saw a rabbit hit a tree and stopped farming",
+      "hanzi": "守株待兔",
+      "angle": "等天上掉馅饼的 2000 年版本",
+      "platform": "双"
+    },
+    {
+      "id": 21,
+      "title_en": "A frog at the bottom of a well thinks the sky is small",
+      "hanzi": "井底之蛙",
+      "angle": "视角即世界，配\"信息茧房\"对照",
+      "platform": "双"
+    },
+    {
+      "id": 22,
+      "title_en": "Fix the fence after the sheep escape",
+      "hanzi": "亡羊补牢",
+      "angle": "迟做总比不做好，配\"安全补丁\"场景",
+      "platform": "双"
+    },
+    {
+      "id": 23,
+      "title_en": "Playing Mozart to a cow",
+      "hanzi": "对牛弹琴",
+      "angle": "讲给听不懂的人听 = 白费",
+      "platform": "TT"
+    },
+    {
+      "id": 24,
+      "title_en": "He marked the boat to find his dropped sword",
+      "hanzi": "刻舟求剑",
+      "angle": "世界变了你还按老坐标找东西",
+      "platform": "YT"
+    },
+    {
+      "id": 25,
+      "title_en": "The old man who lost his horse",
+      "hanzi": "塞翁失马",
+      "angle": "坏事可能是好事的开始（最适合评论区吵架）",
+      "platform": "双"
+    },
+    {
+      "id": 26,
+      "title_en": "A man wakes up, thinks the floor is frost. It's moonlight.",
+      "hanzi": "静夜思",
+      "angle": "乡愁的最高级写法",
+      "platform": "双"
+    },
+    {
+      "id": 27,
+      "title_en": "This line is on a poster in every Chinese office",
+      "hanzi": "登鹳雀楼",
+      "angle": "更上一层楼 = 现代\"升级\"梗",
+      "platform": "双"
+    },
+    {
+      "id": 28,
+      "title_en": "Waking up to birds and fallen petals",
+      "hanzi": "春晓",
+      "angle": "一夜风雨后的惜花，极短极轻",
+      "platform": "双"
+    },
+    {
+      "id": 29,
+      "title_en": "A thousand mountains. No birds. One boat.",
+      "hanzi": "江雪",
+      "angle": "孤独的极简画面，配\"社恐\"共鸣",
+      "platform": "YT"
+    },
+    {
+      "id": 30,
+      "title_en": "Red beans are how Chinese say \"I miss you\"",
+      "hanzi": "相思（王维）",
+      "angle": "红豆=相思，最容易被做成礼物/情人节内容",
+      "platform": "TT"
+    }
+  ]
+}
